@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
 <html dir="ltr" lang="ru">
+<!--<![endif]-->
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Хочусрочно.рф</title>
+    <link rel="stylesheet" href="css/main.css">
     <base href="http://xn--m1ababhfnote.xn--p1ai/" />
     <meta name="description" content="Хочусрочно.рф" />
     <meta name="keywords" content="Хочусрочно.рф" />
@@ -17,673 +23,684 @@
 
     <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 
-    <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" /> -->
     <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
     <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
     <link href="catalog/view/theme/default/stylesheet/ust.css" rel="stylesheet">
-    <link href="catalog/view/theme/default/stylesheet/mobile.css" rel="stylesheet">
-    <link href="catalog/view/theme/default/stylesheet/fonts.css" rel="stylesheet">
+    <!-- <link href="catalog/view/theme/default/stylesheet/mobile.css" rel="stylesheet"> -->
+    <!-- <link href="catalog/view/theme/default/stylesheet/fonts.css" rel="stylesheet"> -->
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <link href="catalog/view/theme/default/stylesheet/sdek.css" type="text/css" rel="stylesheet" media="screen" />
+    <!-- <link href="catalog/view/theme/default/stylesheet/sdek.css" type="text/css" rel="stylesheet" media="screen" /> -->
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU&ns=cdekymap" type="text/javascript"></script>
     <script src="catalog/view/javascript/sdek.js" type="text/javascript"></script>
     <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
     <link href="http://xn--m1ababhfnote.xn--p1ai/image/catalog/cart.png" rel="icon" />
 
 
-    <link rel="stylesheet" href="css/main.css">
-
-
 
 </head>
 
 <body>
-    <div class="container">
-        <header>
 
-        </header>
-        <div class="cb-form">
-            <div class="mask"></div>
-            <div class="mainform">
-                <p class="close-btn"><img src="catalog/view/theme/default/image/close.png"></p>
-                <p class="bluetext">Мы уделяем большое внимание качеству обслуживания наших клиентов.</p>
-                <p class="ltltext">Если вам что-то не понравилось или наоборот - понравилось, при покупке в нашем
-                    магазине,
-                    пожалуйста, сообщите нам об этом. Чтобы оставить отзыв нужно заполнить форму и нажать кнопку
-                    «Отправить».</p>
-                <form name="Form" id="form8" action="#" method="">
-                    <input type="text" required name="firstname" placeholder="ФИО *" id="form_input_1">
-                    <input type="text" required class="emailvalid" name="email" placeholder="Электронная почта *"
-                        id="form_input_2">
-                    <input type="text" required name="telephone" class="only-integer" placeholder="Мобильный телефон *"
-                        id="form_input_3">
-                    <select name="forminputd" id="form_input_4" required>
-                        <option value="" hidden disabled selected>Тема обращения *</option>
-                        <option value="Не установлено">Не установлено</option>
-                        <option value="Отзыв на работу сайта">Отзыв на работу сайта</option>
-                        <option value="Отзыв на качество товара">Отзыв на качество товара</option>
-                        <option value="Отзыв на качество и скорость доставки">Отзыв на качество и скорость доставки
-                        </option>
-                        <option value="Другое">Другое...</option>
-                    </select>
-                    <textarea id="form_input_5" name="forminpute" rows="5"
-                        placeholder="Пожалуйста, сообщите как можно больше подробностей. Примерную дату и время произошедцей ситуации, номер и состав заказа и все детали которые смогут нам помочь максимально быстро по данному обращению."></textarea>
-                    <input type="submit" value="Отправить" id="button">
-                    <h2 id='result'></h2>
-                </form>
-            </div>
+    <header>
+
+    </header>
+    <div class="cb-form">
+        <div class="mask"></div>
+        <div class="mainform">
+            <p class="close-btn"><img src="catalog/view/theme/default/image/close.png"></p>
+            <p class="bluetext">Мы уделяем большое внимание качеству обслуживания наших клиентов.</p>
+            <p class="ltltext">Если вам что-то не понравилось или наоборот - понравилось, при покупке в нашем магазине,
+                пожалуйста, сообщите нам об этом. Чтобы оставить отзыв нужно заполнить форму и нажать кнопку
+                «Отправить».</p>
+            <form name="Form" id="form8" action="#" method="">
+                <input type="text" required name="firstname" placeholder="ФИО *" id="form_input_1">
+                <input type="text" required class="emailvalid" name="email" placeholder="Электронная почта *"
+                    id="form_input_2">
+                <input type="text" required name="telephone" class="only-integer" placeholder="Мобильный телефон *"
+                    id="form_input_3">
+                <select name="forminputd" id="form_input_4" required>
+                    <option value="" hidden disabled selected>Тема обращения *</option>
+                    <option value="Не установлено">Не установлено</option>
+                    <option value="Отзыв на работу сайта">Отзыв на работу сайта</option>
+                    <option value="Отзыв на качество товара">Отзыв на качество товара</option>
+                    <option value="Отзыв на качество и скорость доставки">Отзыв на качество и скорость доставки</option>
+                    <option value="Другое">Другое...</option>
+                </select>
+                <textarea id="form_input_5" name="forminpute" rows="5"
+                    placeholder="Пожалуйста, сообщите как можно больше подробностей. Примерную дату и время произошедцей ситуации, номер и состав заказа и все детали которые смогут нам помочь максимально быстро по данному обращению."></textarea>
+                <input type="submit" value="Отправить" id="button">
+                <h2 id='result'></h2>
+            </form>
         </div>
-        <div class="cb-after">
-            <div class="mask"></div>
-            <div class="thyou"><img src="image/thnk_img.png">
-                <h1>Спасибо за ваш отзыв!</h1>
-                <div class="ty-text">Мы свяжемся с вами в течении 30 минут для уточнения деталей.</div>
-                <p class="close-btn1"><img src="catalog/view/theme/default/image/close.png"></p>
+    </div>
+    <div class="cb-after">
+        <div class="mask"></div>
+        <div class="thyou"><img src="image/thnk_img.png">
+            <h1>Спасибо за ваш отзыв!</h1>
+            <div class="ty-text">Мы свяжемся с вами в течении 30 минут для уточнения деталей.</div>
+            <p class="close-btn1"><img src="catalog/view/theme/default/image/close.png"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="cb-form2">
+        <div class="mask"></div>
+        <div class="mainform">
+            <p class="close-btn2"><img src="catalog/view/theme/default/image/close.png"></p>
+            <div style="text-align:center;"><img src="image/form2_img.png"></div>
+            <p class="bluetext">Оставьте свой контакт, мы свяжемся с вами в течении 30 минут (до 19:00).</p>
+
+            <form name="Form" id="form81" action="#" method="">
+                <input type="text" required name="firstname" placeholder="Имя, отчество *" id="form_input_1">
+                <input type="text" required class="only-integer" name="telephone" placeholder="Мобильный телефон *"
+                    id="form_input_2">
+                <input type="text" required name="forminputc" placeholder="Кол-во масок *" id="form_input_3">
+                <select name="forminputd" id="form_input_4" required>
+                    <option value="Новосибирск">Москва</option>
+                    <option value="Новосибирск">Новосибирск</option>
+                </select>
+                <div style="clear:both;"></div>
+                <input type="submit" value="Отправить заявку" id="button">
+                <h2 id='result'></h2>
+            </form>
+        </div>
+    </div>
+    <div class="cb-after2">
+        <div class="mask"></div>
+        <div class="thyou"><img src="image/thnk_img.png">
+            <h1>Благодарим за вашу заявку!</h1>
+            <div class="ty-text">Мы свяжемся с вами в течении 30 минут для подтверждения заказа.</div>
+            <p class="close-btn4"><img src="catalog/view/theme/default/image/close.png"></p>
+        </div>
+    </div>
+
+
+
+
+    <div class="cb-form3">
+        <div class="mask"></div>
+        <div class="mainform">
+            <p class="close-btn5"><img src="catalog/view/theme/default/image/close.png"></p>
+            <div class="form3-top">
+                <div class="form3-top-right">
+                    <h1>При безналичном расчете поставка осуществляется только при предоплате 100%</h1>
+                    <p>Мы вышлем вам счет и договор максимально быстро. Доставка осуществляется на следующий день после
+                        поступления предоплаты на наш счет.</p>
+                </div>
+
             </div>
+            <p class="bluetext">Оставьте свой контакт, мы свяжемся с вами в течении 30 минут (до 19:00).</p>
+
+            <form name="Form" id="form82" action="#" method="">
+                <input type="text" required name="firstname" placeholder="Имя, отчество *" id="form_input_1">
+                <input type="text" required class="emailvalid" name="email" placeholder="Электронная почта *"
+                    id="form_input_2">
+                <input type="text" required class="only-integer" name="telephone" placeholder="Мобильный телефон *"
+                    id="form_input_21">
+                <input type="text" required name="forminputd" placeholder="Название компании *" id="form_input_31">
+                <input type="text" required name="forminpute" placeholder="Кол-во масок *" id="form_input_33">
+                <input type="text" required name="forminputf" placeholder="Форма налогооблажения: УСН или НДС *"
+                    id="form_input_32">
+                <input type="submit" value="Отправить заявку" id="button">
+                <h2 id='result'></h2>
+            </form>
+        </div>
+    </div>
+    <div class="cb-after3">
+        <div class="mask"></div>
+        <div class="thyou"><img src="image/thnk_img.png">
+            <h1>Благодарим за вашу заявку!</h1>
+            <div class="ty-text">Мы свяжемся с вами в течении 30 минут для подтверждения заказа.</div>
+            <p class="close-btn6"><img src="catalog/view/theme/default/image/close.png"></p>
+        </div>
+    </div>
+
+
+
+
+    <div class="cb-form9">
+        <div class="mask"></div>
+        <div class="mainform">
+            <p class="close-btn9" onclick="$('.cb-form9').hide();"><img
+                    src="catalog/view/theme/default/image/close.png"></p>
+            <div class="form4-top">
+                <h1>Внимание! Мы обновляем цены ежедневно.</h1>
+
+
+                <div class="opt-table-header">Розница и мелкий опт</div>
+                <table class="price-top-table">
+                    <tbody>
+                        <tr>
+                            <td>Количество,<br>(шт.)</td>
+                            <td>от 50</td>
+                            <td>от 100</td>
+                            <td>от 250</td>
+                            <td>от 500</td>
+                            <td>от 1000</td>
+                            <td>от 3000</td>
+                            <td>от 5000</td>
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску УСН,<br>Наличные</td>
+                            <td>
+                                <div class="tbl_full">40.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">32.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">27.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">24.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">21.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску<br>с НДС 20%</td>
+                            <td>
+                                <div class="tbl_full">-</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">-</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">34.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">30.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">28.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">26.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">25.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+                <div class="opt-table-header">Крупный опт</div>
+                <table class="price-top-table price-top-table2">
+                    <tbody>
+                        <tr>
+                            <td>Количество,<br>(шт.)</td>
+                            <td>&nbsp;от 10 000&nbsp;&nbsp;</td>
+                            <td>&nbsp;от 25 000&nbsp;</td>
+                            <td>&nbsp;от 50 000&nbsp;</td>
+                            <td>от 100 000</td>
+                            <td>от 200 000</td>
+                            <td>от 500 000</td>
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску УСН,<br>Наличные</td>
+                            <td>
+                                <div class="tbl_full">21.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">20.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">20.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">19.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">19.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><span
+                                        class="mob_only"><a href="#"
+                                            onclick="$('.cb-form9').hide();$('.cb-form2').show();">Оставить <br
+                                                class="mob_only">заявку</a></span></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску<br>с НДС 20%</td>
+                            <td>
+                                <div class="tbl_full">24.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><br><a
+                                        href="#" onclick="$('.cb-form9').hide();$('.cb-form2').show();">Оставить <br
+                                            class="mob_only">заявку</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+
+            </div>
+
         </div>
 
-
-
-        <div class="cb-form2">
-            <div class="mask"></div>
-            <div class="mainform">
-                <p class="close-btn2"><img src="catalog/view/theme/default/image/close.png"></p>
-                <div style="text-align:center;"><img src="image/form2_img.png"></div>
-                <p class="bluetext">Оставьте свой контакт, мы свяжемся с вами в течении 30 минут (до 19:00).</p>
-
-                <form name="Form" id="form81" action="#" method="">
-                    <input type="text" required name="firstname" placeholder="Имя, отчество *" id="form_input_1">
-                    <input type="text" required class="only-integer" name="telephone" placeholder="Мобильный телефон *"
-                        id="form_input_2">
-                    <input type="text" required name="forminputc" placeholder="Кол-во масок *" id="form_input_3">
-                    <select name="forminputd" id="form_input_4" required>
-                        <option value="Новосибирск">Москва</option>
-                        <option value="Новосибирск">Новосибирск</option>
-                    </select>
-                    <div style="clear:both;"></div>
-                    <input type="submit" value="Отправить заявку" id="button">
-                    <h2 id='result'></h2>
-                </form>
-            </div>
-        </div>
-        <div class="cb-after2">
-            <div class="mask"></div>
-            <div class="thyou"><img src="image/thnk_img.png">
-                <h1>Благодарим за вашу заявку!</h1>
-                <div class="ty-text">Мы свяжемся с вами в течении 30 минут для подтверждения заказа.</div>
-                <p class="close-btn4"><img src="catalog/view/theme/default/image/close.png"></p>
-            </div>
-        </div>
+    </div>
 
 
 
 
-        <div class="cb-form3">
-            <div class="mask"></div>
-            <div class="mainform">
-                <p class="close-btn5"><img src="catalog/view/theme/default/image/close.png"></p>
-                <div class="form3-top">
-                    <div class="form3-top-right">
-                        <h1>При безналичном расчете поставка осуществляется только при предоплате 100%</h1>
-                        <p>Мы вышлем вам счет и договор максимально быстро. Доставка осуществляется на следующий день
-                            после
-                            поступления предоплаты на наш счет.</p>
+
+
+
+    <div>
+        <div class="slider-top pc-slider">
+            <div class="container">
+                <div class="top-block">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="/index.php">Главная</a></li>
+                            <li><a class="menu__item" href="/about">О компании</a></li>
+                            <li><a class="menu__item" href="/payments" style="display:none">Оплата</a></li>
+                            <li><a class="menu__item" href="/delivery">Доставка</a></li>
+                            <li><a onclick='$(".cb-form").show();return false;' class="menu__item cb-btn" href="#"
+                                    class="form-cb">Связь с нами</a></li>
+                            <li><a class="menu__item zakaz" onclick="cart.add('50');" href="#">Заказать</a></li>
+                        </ul>
                     </div>
 
+                    <div class="header">
+                        <div class="logo1"><a class="logo" href="/">ХочуСрочно.рф</a></div>
+                        <div class="phone_top">
+                            <div class="price-top"><a href="#city2" class="city-button">Города, в которых мы
+                                    работаем</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                    onclick="$('.cb-form9').show();" style="cursor:pointer;">Цены</a></div>
+                            <div class="phones-t"> +7(499)2222444 <br> +8(499)22222222 </div>
+                        </div>
+
+                    </div>
                 </div>
-                <p class="bluetext">Оставьте свой контакт, мы свяжемся с вами в течении 30 минут (до 19:00).</p>
-
-                <form name="Form" id="form82" action="#" method="">
-                    <input type="text" required name="firstname" placeholder="Имя, отчество *" id="form_input_1">
-                    <input type="text" required class="emailvalid" name="email" placeholder="Электронная почта *"
-                        id="form_input_2">
-                    <input type="text" required class="only-integer" name="telephone" placeholder="Мобильный телефон *"
-                        id="form_input_21">
-                    <input type="text" required name="forminputd" placeholder="Название компании *" id="form_input_31">
-                    <input type="text" required name="forminpute" placeholder="Кол-во масок *" id="form_input_33">
-                    <input type="text" required name="forminputf" placeholder="Форма налогооблажения: УСН или НДС *"
-                        id="form_input_32">
-                    <input type="submit" value="Отправить заявку" id="button">
-                    <h2 id='result'></h2>
-                </form>
-            </div>
-        </div>
-        <div class="cb-after3">
-            <div class="mask"></div>
-            <div class="thyou"><img src="image/thnk_img.png">
-                <h1>Благодарим за вашу заявку!</h1>
-                <div class="ty-text">Мы свяжемся с вами в течении 30 минут для подтверждения заказа.</div>
-                <p class="close-btn6"><img src="catalog/view/theme/default/image/close.png"></p>
-            </div>
-        </div>
-
-
-
-
-        <div class="cb-form9">
-            <div class="mask"></div>
-            <div class="mainform">
-                <p class="close-btn9" onclick="$('.cb-form9').hide();"><img
-                        src="catalog/view/theme/default/image/close.png"></p>
-                <div class="form4-top">
-                    <h1>Внимание! Мы обновляем цены ежедневно.</h1>
-
-
-                    <div class="opt-table-header">Розница и мелкий опт</div>
-                    <table class="price-top-table">
-                        <tbody>
-                            <tr>
-                                <td>Количество,<br>(шт.)</td>
-                                <td>от 50</td>
-                                <td>от 100</td>
-                                <td>от 250</td>
-                                <td>от 500</td>
-                                <td>от 1000</td>
-                                <td>от 3000</td>
-                                <td>от 5000</td>
-                            </tr>
-                            <tr>
-                                <td>Цена за 1<br>маску УСН,<br>Наличные</td>
-                                <td>
-                                    <div class="tbl_full">40.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">32.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">27.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">24.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">21.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Цена за 1<br>маску<br>с НДС 20%</td>
-                                <td>
-                                    <div class="tbl_full">-</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">-</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">34.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">30.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">28.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">26.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">25.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-
-
-
-                    <div class="opt-table-header">Крупный опт</div>
-                    <table class="price-top-table price-top-table2">
-                        <tbody>
-                            <tr>
-                                <td>Количество,<br>(шт.)</td>
-                                <td>&nbsp;от 10 000&nbsp;&nbsp;</td>
-                                <td>&nbsp;от 25 000&nbsp;</td>
-                                <td>&nbsp;от 50 000&nbsp;</td>
-                                <td>от 100 000</td>
-                                <td>от 200 000</td>
-                                <td>от 500 000</td>
-                            </tr>
-                            <tr>
-                                <td>Цена <br>за 1 маску,<br>(руб.)</td>
-                                <td>
-                                    <div class="tbl_full">21.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">20.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">20.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">19.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">19.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><span
-                                            class="mob_only"><a href="#"
-                                                onclick="$('.cb-form9').hide();$('.cb-form2').show();">Оставить <br
-                                                    class="mob_only">заявку</a></span></div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Цена <br>за 1 маску,<br>(руб.) с НДС</td>
-                                <td>
-                                    <div class="tbl_full">24.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><br><a
-                                            href="#" onclick="$('.cb-form9').hide();$('.cb-form2').show();">Оставить <br
-                                                class="mob_only">заявку</a></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-
-
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-        <div class="top-block">
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="/index.php">Главная</a></li>
-                    <li><a class="menu__item" href="/about">О компании</a></li>
-                    <li><a class="menu__item" href="/payments" style="display:none">Оплата</a></li>
-                    <li><a class="menu__item" href="/delivery">Доставка</a></li>
-                    <li><a onclick='$(".cb-form").show();return false;' class="menu__item cb-btn" href="#"
-                            class="form-cb">Связь с нами</a></li>
-                    <li><a class="menu__item zakaz" onclick="cart.add('50');" href="#">Заказать</a></li>
-                </ul>
             </div>
 
             <div class="slider-inner">
-                <div class="logo1"><a class="logo" href="/">ХочуСрочно.рф</a></div>
-                <div class="phone_top">
-                    <div class="price-top"><a href="#city2" class="city-button">Города, в которых мы
-                            работаем</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                            onclick="$('.cb-form9').show();" style="cursor:pointer;">Цены</a></div>
-                    <div class="phones-t"> +7(499)2222444 <br> +8(499)22222222 </div>
-                </div>
+                <div class="banner-text">
+                    <div class="bt_l">
+                        <div class="bt_l_h">Защитная маска</div>
+                        <div class="bt_l_sh">фабричного производства</div>
+                        <div class="clear"></div>
+                        <div class="r-per">
+                            <div class="r-per-inner">
+                                <div class="r-from">от </div>
+                                <div class="r-price">21.</div>
+                                <div class="r-cops">00</div>
+                                <div class="r-ruble">₽</div>
+                                <div class="r-perone">(за 1 шт.)</div>
 
-            </div>
-        </div>
-
-        <div>
-            <div class="slider-top pc-slider">
-                <div class="slider-inner">
-                    <div class="banner-text">
-                        <div class="bt_l">
-                            <div class="bt_l_h">Защитная маска</div>
-                            <div class="bt_l_sh">фабричного производства</div>
+                            </div>
                             <div class="clear"></div>
-                            <div class="r-per">
-                                <div class="r-per-inner">
-                                    <div class="r-from">от </div>
-                                    <div class="r-price">21.</div>
-                                    <div class="r-cops">00</div>
-                                    <div class="r-ruble">₽</div>
-                                    <div class="r-perone">(за 1 шт.)</div>
-
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="bt_l_btn"><a onclick="cart.add('50');" href="#">Заказать</a></div>
-                            <div class="bt_l_subtext">Бесплатная доставка<br>за 2-3 часа</div>
                         </div>
+                        <div class="bt_l_btn"><a onclick="cart.add('50');" href="#">Заказать</a></div>
+                        <div class="bt_l_subtext">Бесплатная доставка<br>за 2-3 часа</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div>
-            <div class="opt">
-                <div class="opt-inner">
-                    <div class="opt-header">
-                        <h1>Покупайте больше</h1>
-                        <h2>с хорошей скидкой</h2>
-                    </div>
-                    <div class="opt-table-header">Розница и мелкий опт</div>
-                    <table class="price-top-table">
-                        <tbody>
-                            <tr>
-                                <td>Количество,<br>(шт.)</td>
-                                <td>от 50</td>
-                                <td>от 100</td>
-                                <td>от 250</td>
-                                <td>от 500</td>
-                                <td>от 1000</td>
-                                <td>от 3000</td>
-                                <td>от 5000</td>
-                            </tr>
-                            <tr>
-                                <td>Цена за 1<br>маску УСН,<br>Наличные</td>
-                                <td>
-                                    <div class="tbl_full">40.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">32.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">27.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">24.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">21.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Цена за 1<br>маску<br>с НДС 20%</td>
-                                <td>
-                                    <div class="tbl_full">-</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">-</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">34.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">30.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">28.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">26.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">25.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-
-
-
-                    <div class="opt-table-header">Крупный опт</div>
-                    <table class="price-top-table price-top-table2">
-                        <tbody>
-                            <tr>
-                                <td>Количество,<br>(шт.)</td>
-                                <td>&nbsp;от 10 000&nbsp;&nbsp;</td>
-                                <td>&nbsp;от 25 000&nbsp;</td>
-                                <td>&nbsp;от 50 000&nbsp;</td>
-                                <td>от 100 000</td>
-                                <td>от 200 000</td>
-                                <td>от 500 000</td>
-                            </tr>
-                            <tr>
-                                <td>Цена <br>за 1 маску,<br>(руб.)</td>
-                                <td>
-                                    <div class="tbl_full">21.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">20.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">20.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">19.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">19.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><span
-                                            class="mob_only"><a href="#" onclick="$('.cb-form2').show();">Оставить <br
-                                                    class="mob_only">заявку</a></span></div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Цена <br>за 1 маску,<br>(руб.) с НДС</td>
-                                <td>
-                                    <div class="tbl_full">24.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">23.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">50</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full">22.</div>
-                                    <div class="tbl_kop">00</div>
-                                    <div class="tbl_rub">Р</div>
-                                </td>
-                                <td>
-                                    <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><br><a
-                                            href="#" onclick="$('.cb-form2').show();">Оставить <br
-                                                class="mob_only">заявку</a></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <div>
+        <div class="opt">
+            <div class="opt-inner">
+                <div class="opt-header">
+                    <div class="h1">Покупайте больше</div>
+                    <div class="h2">с хорошей скидкой</div>
                 </div>
+                <div class="opt-table-header">Розница и мелкий опт</div>
+                <table class="price-top-table">
+                    <tbody>
+                        <tr>
+                            <td>Количество,<br>(шт.)</td>
+                            <td>от 50</td>
+                            <td>от 100</td>
+                            <td>от 250</td>
+                            <td>от 500</td>
+                            <td>от 1000</td>
+                            <td>от 3000</td>
+                            <td>от 5000</td>
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску УСН,<br>Наличные</td>
+                            <td>
+                                <div class="tbl_full">40.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">32.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">27.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">24.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">21.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску<br>с НДС 20%</td>
+                            <td>
+                                <div class="tbl_full">-</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">-</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">34.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">30.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">28.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">26.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">25.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+                <div class="opt-table-header">Крупный опт</div>
+                <table class="price-top-table price-top-table2">
+                    <tbody>
+                        <tr>
+                            <td>Количество,<br>(шт.)</td>
+                            <td>&nbsp;от 10 000&nbsp;&nbsp;</td>
+                            <td>&nbsp;от 25 000&nbsp;</td>
+                            <td>&nbsp;от 50 000&nbsp;</td>
+                            <td>от 100 000</td>
+                            <td>от 200 000</td>
+                            <td>от 500 000</td>
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску УСН,<br>Наличные</td>
+                            <td>
+                                <div class="tbl_full">21.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">20.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">20.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">19.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">19.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><span
+                                        class="mob_only"><a href="#" onclick="$('.cb-form2').show();">Оставить <br
+                                                class="mob_only">заявку</a></span></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Цена за 1<br>маску<br>с НДС 20%</td>
+                            <td>
+                                <div class="tbl_full">24.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">23.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">50</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full">22.</div>
+                                <div class="tbl_kop">00</div>
+                                <div class="tbl_rub">Р</div>
+                            </td>
+                            <td>
+                                <div class="tbl_full individual"><span class="desc_only">Индивидуально</span><br><a
+                                        href="#" onclick="$('.cb-form2').show();">Оставить <br
+                                            class="mob_only">заявку</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+    </div>
 
-        <div>
-            <div class="delivery_main">
+    <div>
+        <div class="delivery_main">
 
-                <a id="city2"></a>
-                <div class=" map1">
-                    <img src="image/map_1.png" class="number_map">
-                    <div class="map_h_1">Доставка</div>
-                    <div class="map_h_2">через 2-3 часа</div>
-                    <div class="map_h_3">При заказе до 19:00 местного времени</div>
-                    <ul>
-                        <li>Москва</li>
-                        <li>Новосибирск</li>
-                    </ul>
-                    <div class="map_buy"><a onclick="cart.add('50');" href="#">Заказать</a><br>
-                        <div class="free-door"> БЕСПЛАТНАЯ ДОСТАВКА ДО ДВЕРИ</div>
+            <a id="city2"></a>
+            <div class=" map1">
+                <img src="image/map_1.png" class="number_map">
+                <div class="map_h_1">Доставка</div>
+                <div class="map_h_2">через 2-3 часа</div>
+                <div class="map_h_3">При заказе до 19:00 местного времени</div>
+                <ul>
+                    <li>Москва</li>
+                    <li>Новосибирск</li>
+                </ul>
+                <div class="map_buy"><a onclick="cart.add('50');" href="#">Заказать</a><br>
+                    <div class="free-door"> БЕСПЛАТНАЯ ДОСТАВКА ДО ДВЕРИ</div>
 
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-        <div class="buy-block" id="buy-block">
-            <div class="buy-block-inner">
-                <div class="row">
-                    <div class="product-layout">
-                        <div class="product-thumb transition">
-                            <div class="bb_header">Только лучшее<br> фабричное<br> качество</div>
-                            <div class="bb_header2">Три слоя включая фильтр из мелтблауна,<br>который обеспечивает
-                                наджную
-                                защиту<br>верхних дыхательных путей.</div>
-
-                            <div class="button-group">
-                                <button type="button" onclick="cart.add('50');"><span
-                                        class="hidden-xs hidden-sm hidden-md">Заказать</span></button>
-                            </div>
-                            <div class="bb_header3">Бесплатная доставка до двери</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div id="common-home" class="container">
-            <div class="row">
 
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer_left">Информация на сайте не является публичной офертой.<br>Любое копирование
-                        материалов с сайта должно сопровождаться обязательным указанием ссылки на источник.</div>
-                    <div class="footer_right">
-                        <div class="ft_1">
 
-                            <TABLE>
-                                <TR>
-                                    <TD><img src="image/vk.png"></TD>
-                                    <TD><img src="image/ok.png"></TD>
-                                    <TD><img src="image/fb.png"></TD>
-                                    <TD><img src="image/inst.png"></TD>
-                                </TR>
-                            </TABLE>
-                        </div>
 
-                        <div class="ftr_2">+7(499)2222444 <br> +8(499)22222222 </div>
-                    </div>
 
-                </div>
-        </footer>
 
     </div>
+
+    <div class="buy-block" id="buy-block">
+        <div class="buy-block-inner">
+            <div class="row">
+                <div class="product-layout">
+                    <div class="product-thumb transition">
+                        <div class="bb_header">Только лучшее<br> фабричное<br> качество</div>
+                        <div class="bb_header2">Три слоя включая фильтр из мелтблауна,<br>который обеспечивает наджную
+                            защиту<br>верхних дыхательных путей.</div>
+
+                        <div class="button-group">
+                            <button type="button" onclick="cart.add('50');"><span
+                                    class="hidden-xs hidden-sm hidden-md">Заказать</span></button>
+                        </div>
+                        <div class="bb_header3">Бесплатная доставка до двери</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="common-home" class="container">
+        <div class="row">
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_left">Информация на сайте не является публичной офертой.<br>Любое копирование
+                    материалов с сайта должно сопровождаться обязательным указанием ссылки на источник.</div>
+                <div class="footer_right">
+                    <div class="ft_1">
+
+                        <TABLE>
+                            <TR>
+                                <TD><img src="image/vk.png"></TD>
+                                <TD><img src="image/ok.png"></TD>
+                                <TD><img src="image/fb.png"></TD>
+                                <TD><img src="image/inst.png"></TD>
+                            </TR>
+                        </TABLE>
+                    </div>
+
+                    <div class="ftr_2">+7(499)2222444 <br> +8(499)22222222 </div>
+                </div>
+
+            </div>
+    </footer>
+    <!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+
+
+
+
+
 
 
     <script>

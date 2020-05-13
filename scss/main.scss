@@ -1,3 +1,108 @@
-.container{
-    font-family: "Gilroy-Bold";
+* {
+    margin: 0;
+    padding: 0;
+  }
+.container {
+    margin: 0 auto;
+    width: 100%; 
 }
+html{
+  body {
+    font-family: "Montserrat", sans-serif;
+    line-height: normal;
+  }
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+body {
+  .top-block{
+    display: flex;
+    position: relative;
+    padding-top: 0;
+    max-width: 1300px;
+    width: 100%;
+    .header{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      height: 110px;
+    }
+    
+    .logo {
+      padding-left: 0;
+    }
+
+    .phone_top{
+      float:none;
+      padding-right:0;
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    }
+    .price-top{
+      display: flex;
+    justify-content: space-around;
+    float:none;
+    padding:0;
+
+      }
+    .phones-t{
+      float :none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      }
+    
+  }
+  > * {
+
+    margin: 0 auto;
+  }
+  .opt-header {
+
+    .h1{
+      font-size: 74px;
+    color: #03879c;
+    font-family: "Gilroy-extrabold";
+    width: 400px;
+    }
+    .h2{
+      font-size: 36px;
+      font-family: "Gilroy-extrabold";
+      
+
+    }
+  }
+  
+}
+
+.slider-top{
+  .slider-inner{
+
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    height: 750px;
+    .banner-text{
+      top: 0;
+      padding-top:0;
+      z-index: 55;
+      padding-right:0;
+      float: none;
+      margin-left: auto;
+    }
+  }
+  
+  
+}
+
+
